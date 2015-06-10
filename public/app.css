@@ -7,6 +7,13 @@ html
     /*overflow: hidden;*/
 }
 
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
 /* hides scrollbar on mobile */
 ::-webkit-scrollbar { 
     width: 0 !important
@@ -227,13 +234,13 @@ h3 {
 }
 
 .devider i {
-  color: #762C18;
+  color: #222;
 }
 
 .devider:before,
 .devider:after {
   content: "_________";
-  color: #762C18;
+  color: #222;
   position: relative;
   bottom: 6px;
 }
@@ -297,6 +304,8 @@ h3 {
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
       animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
+
+
  
 @-webkit-keyframes spin {
     0%   {

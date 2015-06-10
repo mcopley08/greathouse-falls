@@ -20,8 +20,8 @@ var theater = new TheaterJS();
 // First, describe actors by passing a name, 
 // an experience and finally a selector string.
 theater
-  .describe("Vader", { speed: .8, accuracy: .6, invincibility: 4 }, "#vader")
-  .describe("Luke", .6, "#luke");
+  .describe("Vader", { speed: .8, accuracy: .9, invincibility: 4 }, "#vader")
+  .describe("Luke", { speed: .8, accuracy: .8, invincibility: 4 }, "#luke");
 
 
 
@@ -74,12 +74,12 @@ theater
   // "Vader:Luke" adds 2 scenes:
   // 1 - Update current actor.
   // 2 - Add a "say" scene with the speech (Luke in this example).
-  .write("Vader:The highlights from the past year")
+  .write("Vader:are all taking advantage of you.")
 
   // When passing a positive int to the write method,
   // it adds a "wait" scene.
   // A break lasting for the amout of the passed argument (ms).
-  .write(3600)
+  .write(600)
 
   // A function is added as a "call" scene.
   // It simply call the passed function by setting 
@@ -87,17 +87,17 @@ theater
   // In this case, the toggleClass is simply toggling body's class.
   // Luke has a white background while Vader has a darker one.
 
-  .write("Vader:and remember your favorite experiences")
+  .write("Luke:It's time to cut the shit.")
 
   // Previous arguments are just shorthands that build the proper scene object.
   // However, you can pass a scene object with more complex args.
-  .write({ name: "call", args: [kill, true] })
+  // .write({ name: "call", args: [kill, true] })
 
 
   // A negative int creates an "erase" scene that removes x characters.
-  .write(-3)
+  // .write(-3)
 
-  .write("Vader:What makes up your greatest memories", 7200)
+  // .write("Vader:What makes up your greatest memories", 7200)
 
   // Passing the actor's name in the string update the current actor.
   // It also erase the previous speech to show the new one.
