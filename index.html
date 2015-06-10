@@ -167,7 +167,7 @@
 
       // mobile
       if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-        window.scrollTo(200,100);
+        setTimeout(window.scrollTo($("#about").offset().top,$("#about").offset().top),100);
       }
       // desktop
       else {
