@@ -164,9 +164,19 @@
 
     // This deals with the automatic scrolling
     $(document).on('click', '#next-selection', function() {
-      $('html, body').animate({
-        scrollTop: $("#about").offset().top
-      }, 1000);
+
+      // mobile
+      if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+        $('body').animate({
+          scrollTop: $("#about").offset().top
+        }, 1000);
+      }
+      // desktop
+      else {
+        $('html, body').animate({
+          scrollTop: $("#about").offset().top
+        }, 1000);
+      }
     });
 
     // EFFECTS: Allows an animated.css effect to occur on an 
