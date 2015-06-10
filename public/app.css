@@ -9,16 +9,6 @@ html
 
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
-
-/* hides scrollbar on mobile */
-::-webkit-scrollbar { 
-    width: 0 !important
-}
-
 html > body {
 
 }
@@ -54,10 +44,11 @@ header {
         ),
         url(img/parchment.jpg);
     width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    background-size: cover;
+    /*height: 100%;*/
+    /*overflow-x: hidden;*/
+    /*background-size: cover;*/
     background-position: center;
+    background-repeat: repeat-y;
     font-family: 'Lato', sans-serif !important;
     color: #fff !important;
     margin-bottom: -100px !important;
@@ -67,7 +58,7 @@ header {
 
 section {
 	margin: 5rem 0;    
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 h1 {
@@ -106,6 +97,7 @@ video {
 h3 {
     font-size: 5em !important;
     font-family: 'GreatVibes' !important;
+    line-height: 80% !important;
 }
 
 .cta-button > .button {
@@ -222,6 +214,21 @@ h3 {
 
 .headliner img {
     margin-top: -150px !important;
+}
+
+@media (max-width: 480px) {
+    .headliner {
+        margin-top: 160px;
+    }
+    .headliner img {
+        margin-top: -50px !important;
+    }
+    .info {
+        font-size: 1em !important;
+    }
+    h3 {
+        font-size: 3.5em !important;
+    }
 }
 
 #loading-contents {
