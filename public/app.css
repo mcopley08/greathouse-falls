@@ -1,0 +1,324 @@
+html
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+/* hides scrollbar on mobile */
+::-webkit-scrollbar { 
+    width: 0 !important
+}
+
+html > body {
+
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url(img/clothes.jpg);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+	background-size: cover;
+    background-position: center;
+	font-family: 'Lato', sans-serif !important;
+	color: #fff !important;
+
+}
+
+#about {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url(img/parchment.jpg);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif !important;
+    color: #fff !important;
+    margin-bottom: -100px !important;
+    margin-top: 0px !important;
+    padding-top: 50px !important;
+}
+
+section {
+	margin: 5rem 0;    
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 4em !important;
+    letter-spacing: 5px;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h2, h3, h4, h5, h6, p {
+	font-family: 'Lato', sans-serif !important;
+}
+
+p {
+    font-size: 1.5em !important;
+}
+
+label {
+	display: inline-block !important;
+	color: #fff !important;
+	font-size: 14px !important;
+}
+
+video {
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/greatvibes.otf") format("opentype");
+}
+
+h3 {
+    font-size: 5em !important;
+    font-family: 'GreatVibes' !important;
+}
+
+.cta-button > .button {
+    background-color: #0B243B !important;
+}
+
+.copy-paste > .button {
+    background-color: #0B243B !important;
+}
+
+.one-edge-shadow {
+    -webkit-box-shadow: 0 6px 8px 0px rgb(80,80,80);
+       -moz-box-shadow: 0 6px 8px 0px rgb(80,80,80);
+            box-shadow: 0 6px 8px 0px rgb(80,80,80), 0 -2px 8px 0px rgb(80,80,80);
+}
+
+.developer {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+}
+
+.developer:hover {
+    cursor: pointer; 
+    cursor: hand;
+}
+
+.hover-click {
+    cursor: pointer; 
+    cursor: hand;
+}
+
+.info {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+}
+
+.donate {
+    letter-spacing: 5px;
+    color: black;
+    font-size: 1.2em;
+    display: inline;
+}
+
+.donate:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.duration {
+	width: 100px;
+	display: inline-block !important;
+	margin-left: 25px !important;
+}
+
+.none {
+	display: none !important;
+}
+
+.white {
+	color: #fff !important;
+}
+
+.dark-font {
+	color: #3B3D45 !important;
+}
+
+.login-buttons {
+	margin-bottom: 40px !important;
+}
+
+.top-container {
+	font-weight: 700;
+	font-size: 1rem;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+.facebook {
+	background-color: rgba(0,0,0,0.5) !important;
+}
+
+.facebook:hover {
+	background-color: rgba(0,0,0,0.7) !important;
+}
+
+.spotify {
+	background-color: rgba(80,80,80,1) !important;
+}
+
+.spotify:hover {
+	background-color: rgba(40,40,40,1) !important;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.disabled {
+	cursor: default !imporant;
+}
+
+.button {
+	line-height: 1.7 !important;
+	margin-top: 4px !important;
+}
+
+.headliner {
+    margin-top: 230px;
+}
+
+.headliner img {
+    margin-top: -150px !important;
+}
+
+#loading-contents {
+
+}
+
+.devider {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.devider i {
+  color: #762C18;
+}
+
+.devider:before,
+.devider:after {
+  content: "_________";
+  color: #762C18;
+  position: relative;
+  bottom: 6px;
+}
+
+.devider:before {
+  right: 10px;
+}
+
+.devider:after {
+  left: 10px;
+}
+
+/*** loader ***/
+
+#loader-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #848484;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #848484;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #848484;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
