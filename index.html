@@ -167,9 +167,7 @@
 
       // mobile
       if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-        $('body').animate({
-          scrollTop: $("#about").offset().top
-        }, 1000);
+        $('body').scrollTop($("#about").offset().top);
       }
       // desktop
       else {
